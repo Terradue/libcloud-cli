@@ -1,0 +1,16 @@
+[default]
+provider: openstack
+
+[openstack]
+user: YOUR_USER
+key: YOUR_KEY
+ex_force_auth_version: PASSWORD
+ex_force_auth_url: URL
+ex_force_base_url: URL
+ex_domain_name: DOMAIN_NAME
+ex_token_scope: SCOPE
+ex_tenant_name: TENNANT_NAME
+default_size: 256
+default_image: CentOS 5.6
+default_public_key: ~/.ssh/id_rsa.pub
+default_deploy_script: (wget -qO- http://dl.dropbox.com/u/<id>/bootstrap.sh | /bin/sh) >deploy.log 2>&1

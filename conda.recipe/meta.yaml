@@ -1,0 +1,33 @@
+package:
+  name: libcloudcli
+  version: 1.0.1
+
+source:
+  path: ../libcloudcli
+
+build:
+  number: 2
+
+build:
+  #preserve_egg_dir: True
+  entry_points:
+        - lc = libcloudcli.lc:main
+
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - apache-libcloud
+
+#test:
+#  imports:
+#    -
+
+about:
+  home:
+  license:
+  license_file:
